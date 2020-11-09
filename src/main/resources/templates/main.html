@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
   <html xmlns:th="http://www.thymeleaf.org" lang="en">
   <head>
-    <div th:replace="fragments/style :: head" ></div>
+    <div th:replace="fragments/fragment :: head" ></div>
   </head>
 
 
 
   <body>
-    <div th:replace="fragments :: navbar" ></div>
+    <div th:replace="fragments/fragment :: navbar" ></div>
     
     <main role="main">
         <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -40,6 +40,17 @@
                     </div>
 
                     <div class="col">
+                        <div class="col">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text">Text to be inserted later</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+    
+                        </div>
 
                     </div>
 
@@ -54,7 +65,7 @@
         </div>
     </main>
     
-    <footer th:replace="fragments :: footer"></footer>
+    <footer th:replace="fragments/fragment :: footer"></footer>
   </body>
   </html>
 
